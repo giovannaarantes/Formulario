@@ -1,44 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Times, Times New Roman, serif;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #fcf8fa;
-    color: #333;
-    max-width: 800px;
-    margin: 0 auto;
+    background-color: #fff0f5; 
+    color: #4a3b40;          
+    line-height: 1.6;
     padding: 20px;
-}
-
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-    color: #af7675;
-}
-
-/* Centraliza o cabeçalho e rodapé */
-header, footer, #agradecimento {
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
 }
-
-/* Estilo do Menu */
-nav {
-    border-radius: 8px;
-    padding: 10px;
-    margin-top: 15px;
+header {
+    background-color: #faf8b5; 
+    padding: 2rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.form-container {
+    background-color: #ebebeb;
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 90px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.form-container h2 {
+    font-size: 1.2rem;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    flex-direction: column;
 }
 
-nav a {
-    text-decoration: none;
-    font-weight: 600;
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
 }
 
-/* Imagens responsivas */
-img {
-    max-width: 100%;
-    border-radius: 6px;
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    outline: none;
+    background-color: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #adff2f;
+}
+
+.btn-enviar {
+    width: 50%;
+    background-color: #e8d20d; /* Verde limão */
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #a29b1f;
+}
+.form-container {
+    background-color: #ebebeb;
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 90px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+    /* Adicione esta linha para centralizar o bloco na horizontal: */
+    margin: 30px auto; 
 }

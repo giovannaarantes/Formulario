@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pesquisa.css">
+    <title>Pesquisa de Satisfação</title>
+</head>
+<body>
+
+    <h1> Que tal nos contar como foi sua experiência?</h1>
+
+    <form action="#" method="post">
+
+        <div>
+            <label for="nome">Nome do cliente:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o seu nome completo" required>
+        </div>
+        <br>
+
+       
+        <div>
+            <label for="data_visita">Data da visita:</label>
+            <input type="date" id="data_visita" name="data_visita" required>
+        </div>
+        <br>
+
+       
+        <div>
+            <label for="avaliacao_atendimento">Avaliação do atendimento:</label>
+            <select id="avaliacao_atendimento" name="avaliacao_atendimento" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="Excelente">Excelente</option>
+                <option value="Bom">Bom</option>
+                <option value="Regular">Regular</option>
+                <option value="Ruim">Ruim</option>
+            </select>
+        </div>
+        <br>
+
+       
+        <div>
+            <label for="nota_restaurante">Nota do restaurante (1 a 10):</label>
+            <input type="number" id="nota_restaurante" name="nota_restaurante" min="1" max="10" placeholder="Ex: 8" required>
+        </div>
+        <br>
+
+        
+        <div>
+            <p>Itens que você mais gostou:</p>
+            
+            <input type="checkbox" id="atendimento" name="itens_gostou[]" value="Atendimento">
+            <label for="atendimento">Atendimento</label><br>
+
+            <input type="checkbox" id="comida" name="itens_gostou[]" value="Comida">
+            <label for="comida">Comida</label><br>
+
+            <input type="checkbox" id="ambiente" name="itens_gostou[]" value="Ambiente">
+            <label for="ambiente">Ambiente</label><br>
+
+            <input type="checkbox" id="preco" name="itens_gostou[]" value="Preço">
+            <label for="preco">Preço</label>
+        </div>
+        <br>
+
+      
+        <div>
+            <label for="comentario">Comentário:</label><br>
+            <textarea id="comentario" name="comentario" rows="5" placeholder="Escreva aqui o seu comentário..." required></textarea>
+        </div>
+        <br>
+
+        
+        <div>
+            <button type="submit">Enviar avaliação</button>
+        </div>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="curso.css">
+    <title>Instituto Digital 🖥️</title>
+</head>
+<body>
+
+    <header>
+        <h1>Instituto Digital 🖥️</h1>
+        <h2>
+            A empresa Instituto Digital é uma instituição de ensino que oferece cursos de tecnologia e desenvolvimento de software. Com uma abordagem prática e voltada para o mercado, a empresa busca capacitar profissionais para atender às demandas do setor de TI.
+        </h2>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Entre em Contato</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone"> Telefone </label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(55) 5555-5555" required>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="data-nascimento"> Data de nascimento </label>
+                    <input type="date" id="data-nascimento" name="data-nascimento" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="curso">Curso Desejado </label>
+                    <select id="curso" name="curso" required>
+
+                        <option value="dev">Desenvolvimento de Sistemas</option>
+                        <option value="redes"> Redes de computadores </option>
+                        <option value="adm"> Administração </option>
+                        <option value="mec"> Mecatrônica </option>
+                    </select>
+                </div>
+
+                <label>Turno:</label>
+
+        <input type="radio" id="manha" name="turno" value="manha">
+        <label for="manha">Manhã</label>
+
+        <input type="radio" id="tarde" name="turno" value="tarde">
+        <label for="tarde">Tarde</label>
+
+        <input type="radio" id="noite" name="turno" value="noite">
+        <label for="noite">Noite</label>
+                 
+                <br>
+                
+                    <button type="submit" class="btn-enviar">ENVIAR</button>
+
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
